@@ -9,51 +9,501 @@
       name="keywords"
       content="Web store, online store, shopping, Unique Find"
     />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>Unique Finds</title>
   </head>
   <body>
     <!-- Nav Bar -->
+    <header>
+      <!-- Phone Number -->
+      <p>Call Us: 1-800-123-4567</p>
+
+      <!-- Offer -->
+      <p class="offer">
+        Get 50% off your first order. Use code: <strong>UNIQUE</strong>
+      </p>
+      <div style="display: flex; align-items: center; gap: 8px">
+        <!-- Language options -->
+        <select name="language" id="language">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="italian">Italian</option>
+          <option value="japanese">Japanese</option>
+          <option value="korean">Korean</option>
+          <option value="chinese">Chinese</option>
+          <option value="russian">Russian</option>
+          <option value="arabic">Arabic</option>
+        </select>
+        <!-- Currency options -->
+        <select name="currency" id="currency">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+          <option value="jpy">JPY</option>
+          <option value="cny">CNY</option>
+          <option value="krw">KRW</option>
+          <option value="rub">RUB</option>
+          <option value="sar">SAR</option>
+        </select>
+      </div>
+    </header>
     <nav class="navbar">
       <h2>Unique Finds</h2>
       <ul>
-        <li>Home</li>
-        <li>Products</li>
-        <li>Cart</li>
+        <li>
+          <!-- Categories Select -->
+          <select name="categories" id="categories">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="home">Home</option>
+            <option value="toys">Toys</option>
+            <option value="sports">Sports</option>
+            <option value="books">Books</option>
+            <option value="music">Music</option>
+            <option value="movies">Movies</option>
+            <option value="games">Games</option>
+            <option value="beauty">Beauty</option>
+            <option value="health">Health</option>
+            <option value="grocery">Grocery</option>
+            <option value="tools">Tools</option>
+            <option value="automotive">Automotive</option>
+            <option value="industrial">Industrial</option>
+          </select>
+        </li>
+        <li>
+          <a href="#">Deals</a>
+        </li>
+        <li>
+          <a href="#">What's New</a>
+        </li>
+        <li>
+          <a href="#"> Delivery </a>
+        </li>
       </ul>
-    </nav>
+      <!-- Search UF -->
+      <form action="" id="search">
+        <input type="text" placeholder="Search UF" />
 
-    <!-- Why Use Unique Finds -->
-    <div class="why_unique_finds">
-      <h1>Why Use Unique Finds</h1>
-      <br />
-      <p>
-        For decades, people have been using the internet to buy and sell goods.
-        However, the internet has become a very competitive place to do
-        business. There are many online stores that sell the same products as
-        Unique Finds. So, why should you choose Unique Finds over other online
-        stores?
+        <button type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+      <!-- Account -->
+      <div class="icons">
+        <p>
+          <i class="bi bi-person" style="font-size: x-large"> </i>
+          Account
+        </p>
+        <p>
+          <i class="bi bi-cart-plus"></i>
+          Cart
+        </p>
+      </div>
+    </nav>
+    <div class="firts_offer_card">
+      <p style="font-family: sans-serif">
+        Grab up to 50% off on all products. Use code: <strong>UNIQUE</strong>
       </p>
-      <br />
-      <p>
-        Unique Finds is a web store that sells unique products. We have a wide
-        variety of products that you can choose from. We have products that are
-        not available in other online stores. We also have products that are
-        available in other online stores, but we sell them at a lower price.
-      </p>
-      <br />
-      <p>
-        At Unique Finds, we believe that our customers deserve the best. We
-        strive to provide our customers with the best products and services. We
-        also strive to provide our customers with the best prices. We believe
-        that our customers deserve the best, and we are committed to providing
-        them with the best.
-      </p>
+      <img
+        src="./assets/headsets.jpeg"
+        height="100"
+        width="200"
+        alt="headsets"
+      />
     </div>
-    <!-- What you can Find on Unique Finds -->
-    <div class="what_to_find_on_unique_finds"></div>
-    <!-- How Serve Our Cunstomers -->
-    <div class="how_we_serve"></div>
+    <div class="filter_options">
+      <div class="left">
+        <!-- Type of headphones  -->
+        <select name="headphones" id="headphones">
+          <option value="all">Headphones Types</option>
+          <option value="earbuds">Earbuds</option>
+          <option value="over-ear">Over-Ear</option>
+          <option value="on-ear">On-Ear</option>
+        </select>
+        <!-- Prices -->
+        <select name="prices" id="prices">
+          <option value="all">Prices</option>
+          <option value="under-50">Under $50</option>
+          <option value="50-100">$50 - $100</option>
+          <option value="100-200">$100 - $200</option>
+          <option value="200-300">$200 - $300</option>
+          <option value="300-400">$300 - $400</option>
+          <option value="400-500">$400 - $500</option>
+          <option value="500-600">$500 - $600</option>
+          <option value="600-700">$600 - $700</option>
+          <option value="700-800">$700 - $800</option>
+          <option value="800-900">$800 - $900</option>
+          <option value="900-1000">$900 - $1000</option>
+        </select>
+        <!-- Reviews -->
+        <select name="reviews" id="reviews">
+          <option value="all">Reviews</option>
+          <option value="4-5">4 & 5 Stars</option>
+          <option value="3-5">3 & 5 Stars</option>
+          <option value="2-5">2 & 5 Stars</option>
+          <option value="1-5">1 & 5 Stars</option>
+        </select>
+        <!-- Color -->
+        <select name="color" id="color">
+          <option value="all">Color</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="orange">Orange</option>
+          <option value="purple">Purple</option>
+          <option value="pink">Pink</option>
+          <option value="brown">Brown</option>
+          <option value="grey">Grey</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+        <!-- Material -->
+        <select name="material" id="material">
+          <option value="all">Material</option>
+          <option value="plastic">Plastic</option>
+          <option value="metal">Metal</option>
+          <option value="wood">Wood</option>
+          <option value="leather">Leather</option>
+          <option value="rubber">Rubber</option>
+          <option value="fabric">Fabric</option>
+        </select>
+        <!-- Offer -->
+        <select name="offer" id="offer">
+          <option value="all">Offer</option>
+          <option value="free-shipping">Free Shipping</option>
+          <option value="free-return">Free Return</option>
+          <option value="free-shipping-return">Free Shipping & Return</option>
+        </select>
+      </div>
+      <div class="right">
+        <p></p>
+        <select name="sort" id="sort">
+          <option value="Sort by:">Sort by</option>
+          <option value="all">All</option>
+          <option value="price-low-high">Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Headphones for you -->
+    <div class="headphones_for_you">
+      <h2>Headphones for you</h2>
+      <div class="headphones">
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+        <div class="headphone">
+          <!-- Love icon -->
+          <button id="like">
+            <i class="bi bi-heart"></i>
+          </button>
+          <img src="./assets/headsets.jpeg" alt="headsets" />
+          <div class="headphone_info">
+            <div style="display: flex; justify-content: space-between">
+              <h6>Headphone 1</h6>
+
+              <p>
+                <strong> $100 </strong>
+              </p>
+            </div>
+            <!-- Description -->
+            <p id="desc">
+              Comes with a 3.5mm audio jack, a 3.5mm to 6.35mm adapter, and a
+              3.5mm to 2.5mm adapter.
+            </p>
+
+            <!-- Rating with start -->
+            <div class="rate">
+              <p>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+                <i class="bi bi-star-fill" style="color: green"></i>
+              </p>
+              <p>(121)</p>
+            </div>
+          </div>
+          <!-- Add to cart -->
+          <button id="add_to_cart">Add to cart</button>
+          <!-- <br>
+          <br> -->
+          <!-- <br> -->
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer></footer>
   </body>
