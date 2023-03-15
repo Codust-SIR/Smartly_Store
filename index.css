@@ -177,7 +177,6 @@ nav ul li a {
   color: white;
 }
 footer{
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em;
