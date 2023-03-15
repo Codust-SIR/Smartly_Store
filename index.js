@@ -6,4 +6,7 @@ function getProducts() {
   });
 }
 
+// Hello this is a js file
+
+
 getProducts();
