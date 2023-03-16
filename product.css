@@ -1,0 +1,13 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: goldenrod;
+}
+.list1{
+    display:flex; 
+    grid-column: 3,1;
+    grid-template-columns: 3,1;
+}
+.oursites{
+    margin-left: 250px;
+}
