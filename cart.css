@@ -1,9 +1,14 @@
  body{
     margin:0px;
     padding: 0px;
-    background-color: red;
-    color: blue;
+
  } 
+ .navbar{
+    height:100px;
+    width:100%;
+    color:green;
+    background-color: greenyellow;
+ }
  
  .cart{
 background-color: rgb(84, 194, 84);
@@ -27,4 +32,52 @@ transition-duration:0.15s;
     transition-duration:0.15s;
     color:red;
     
+ }
+ .main{
+   height:100%;
+   width:70%;
+   background-color: aqua;
+ }
+
+ .nav1{
+   margin-left:5%;
+   margin-top:12px;
+   height:200px;
+   width:100%;
+   Background-color:red;
+   border-radius:4px;
+   display:flex;
+   align-items:space-between;
+   gap: 80px;
+ }
+
+ .nav2{
+  margin-top:10px;
+   height:200px;
+   width:100%;
+   margin-left:5%;
+   background-color: blue;
+   border-width:8px;
+  
+   border-color: black;
+   border-top-width:12px;
+ }
+ .Amount{
+  margin-top:12px;
+  margin-left:3%;
+  height:1008px;
+  width:150px;
+  background-color: brown;
+  border-radius:4px;
+  display:flex;
+  align-items:space-between;
+  align-content: center;
+ }
+ 
+
+ .container{
+  display:flex;
+  align-items:column;
+  height:100%;
+  width:100%;
  }
