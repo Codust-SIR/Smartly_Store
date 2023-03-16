@@ -122,6 +122,12 @@ nav ul li a {
   border-radius: 15px;
   border-style: none;
 }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 1px; */
+  /* padding: 1em; */
+}
 /* Head phones for you  */
 .headphones {
   display: grid;
