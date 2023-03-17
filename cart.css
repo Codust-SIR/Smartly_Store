@@ -1,9 +1,14 @@
  body{
     margin:0px;
     padding: 0px;
-    background-color: red;
-    color: blue;
+
  } 
+ .navbar{
+    height:100px;
+    width:100%;
+    color:green;
+    background-color: greenyellow;
+ }
  
  .cart{
 background-color: rgb(84, 194, 84);
