@@ -122,6 +122,12 @@ nav ul li a {
   border-radius: 15px;
   border-style: none;
 }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 1px; */
+  /* padding: 1em; */
+}
 /* Head phones for you  */
 .headphones {
   display: grid;
@@ -175,4 +181,11 @@ nav ul li a {
 #add_to_cart:hover {
   background-color: green;
   color: white;
+}
+footer{
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: green;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
