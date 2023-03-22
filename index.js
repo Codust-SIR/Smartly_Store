@@ -6,6 +6,7 @@ async function getPostsFromTypicode() {
   let usersNameP = users.filter((users) => {
     return users.name.includes("P");
   });
+}
 
 async function initApp () {
   await getProductsFromServer()
