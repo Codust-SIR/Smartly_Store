@@ -21,6 +21,8 @@ async function getPostsFromTypicode() {
 </div>
 `
   })
+
+  
   //filter method to filter users whit the name include "p"
   let usersNameP = users.filter((users) => {
     return users.name.includes("P");
