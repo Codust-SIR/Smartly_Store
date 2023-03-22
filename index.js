@@ -28,8 +28,7 @@ async function getPostsFromTypicode() {
 }
 
 async function initApp () {
-  await getProductsFromServer()
+  await getPostsFromTypicode()
 }
 
-
-document.getElementById("reviewers").innerHTML +=`this is the reviewers section`
+initApp()
