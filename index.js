@@ -36,4 +36,4 @@ async function initApp () {
   await getPostsFromTypicode()
 }
 
-init();
+init()
