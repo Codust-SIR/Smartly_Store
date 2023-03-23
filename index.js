@@ -5,25 +5,22 @@ async function getPostsFromTypicode() {
 
   users.map((user)=>{
     document.getElementById("reviewers").innerHTML +=`
-     <p>${user.email}</p>`
-
-// `
-//     <div id="user">
-//       <div id="user_top">
-//       <div id="user_avata"></div>
-//       <div id="user_names">
-//         <h4>${user.name}</h4>
-//         <p>${user.usernames}</p>
-//       </div>
-//     </div>
-//     <div id="user_bottom">
-//       <p>company:${user.company.name}</p>
-//       <p>city:${user.address.city}</p>
-//       <p>Email:${user.email}</p>
-//       <a href="${user.website}">${user.website}</a>
-//     </div>
-// </div>
-//  `
+    <div id="user">
+      <div id="user_top">
+      <div id="user_avata"></div>
+      <div id="user_names">
+        <h4>${user.name}</h4>
+        <p>${user.usernames}</p>
+      </div>
+    </div>
+    <div id="user_bottom">
+      <p>company:${user.company.name}</p>
+      <p>city:${user.address.city}</p>
+      <p>Email:${user.email}</p>
+      <a href="${user.website}">${user.website}</a>
+    </div>
+</div>
+ `
   })
 
   
