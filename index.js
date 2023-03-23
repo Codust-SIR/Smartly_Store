@@ -25,15 +25,10 @@ async function getPostsFromTypicode() {
   let usersNameP = users.filter((users) => {
     return users.name.includes("P");
   });
-/* fetch data from a server
-function getProducts() {
-  return fetch("http://localhost:3001/products").then((res) =>
-    res.json().then((data) => data)
-  );
 }
 
 async function initApp () {
   await getPostsFromTypicode()
 }
 
-init()
+initApp()
