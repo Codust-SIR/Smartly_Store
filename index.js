@@ -20,3 +20,4 @@ getUsers();
 // Array.prototype.map()
 
 init();
+*/
