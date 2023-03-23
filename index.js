@@ -5,7 +5,7 @@ async function getPostsFromTypicode() {
 
   users.map((user)=>{
     document.getElementById("reviewers").innerHTML +=`
-    // <p>${user.email}</p>`
+     <p>${user.email}</p>`
 
 // `
 //     <div id="user">
