@@ -8,6 +8,7 @@ async function getUsers() {
       <p>${user.email}</p>
     `;
   });
+}
 /* fetch data from a server
 function getProducts() {
   return fetch("http://localhost:3001/products").then((res) =>
