@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    display: flex;
+}
+.note2{
+    padding-left: 90px;
+}
+.list1{
+    display:flex; 
+   
+}
+.list2{
+    margin-left: 200px;
+}
+.oursites{
+    margin-left: 300px;
+}
+.prod{
+    margin-left: 200px;
+}
+.foot{
+    background-color: grey;
+    padding-top: 220px;
+}
