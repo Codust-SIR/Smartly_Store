@@ -6,12 +6,13 @@ async function getUsers() {
   users.map((user) => {
     console.log(user.name);
   });
-/* fetch data from a server
-function getProducts() {
-  return fetch("http://localhost:3001/products").then((res) =>
-    res.json().then((data) => data)
-  );
 }
 
 getUsers();
 //Array.prototype.map()
+
+async function initApp () {
+  await getPostsFromTypicode()
+}
+
+initApp()
