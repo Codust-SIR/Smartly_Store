@@ -1,22 +1,13 @@
-async function getUsers() {
-  //fetching users from the jsonplaceholder API
-  const response = await fetch ("https://jsonplaceholder.typicode.com/users");
-  const users = await response.json();
-  //looping through thr users array
-  users.map((user) => {
-    console.log(user.name);
+// fetch data from a server
+function getProducts() {
+  return fetch("http://localhost:3001/products").then((res) => {
+    res.body;
+    console.log("products", res);
   });
 }
+ 
 
-getUsers();
-//Array.prototype.map()
+// Hello this is a js file
 
-async function initApp () {
-  await getPostsFromTypicode()
-}
 
-initApp()
-
-// Commentt
-
-// Coommet
+getProducts();

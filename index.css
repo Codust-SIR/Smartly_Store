@@ -188,4 +188,47 @@ footer{
   padding: 2em;
   background-color: green;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  gap: 50px 0 0 25px;
+text-align: center;
+}
+.dii{
+  text-align: center;
+  margin-right: 50;
+}
+@keyframes diiAnimation{
+  0%{
+    bottom: 0px;
+    height: 100;
+    width: 100;
+    background-color: yellowgreen;
+  }
+  50%{
+    bottom: 10px;
+    width: 200;
+    height: 200%;
+    background-color: rgb(24, 27, 209);
+    border-radius: 0;
+  }
+  100%{
+    bottom: 0px;
+    height: 50%;
+    width: 200;
+    background-repeat: repeat-y 50%;
+  background-color: rgb(215, 250, 15);
+   border-radius: 5%;
+
+}
+200%{
+  height: 50%;
+  width: 1000px;
+  border-bottom: rgb(220, 230, 216);
+}
+}
+.dii{
+  border-radius: 50px;
+  width: 50px;
+  height: 100px;
+  animation-name: diiAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
 }
