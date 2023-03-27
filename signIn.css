@@ -13,10 +13,13 @@
     align-items: center;
 }
 .container-header{
-    padding: 50px 0;
+    padding: 10px 0 30px 50px;
+    width: 75%;
 }
 .container-header h1{
-    font-size: 40px;
+    font-size: 70px;
+    color: white;
+    text-transform: capitalize;
 }
 .theBox{
     height: 30rem;
