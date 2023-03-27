@@ -19,7 +19,7 @@
 .container-header h1{
     font-size: 70px;
     color: white;
-    text-transform: capitalize;
+    text-transform: capitalize     ;
 }
 .theBox{
     height: 30rem;

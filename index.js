@@ -29,6 +29,10 @@ async function getPostsFromTypicode() {
     return users.name.includes("P");
   });
 }
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 94300bf1d8f06283e0b8135813da19af1d2fad25
 
 async function initApp () {
   await getPostsFromTypicode()
