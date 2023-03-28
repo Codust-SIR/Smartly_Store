@@ -11,13 +11,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
-.container i{
-    font-size: 90px;
+.container #bg-icon{
+    position: absolute;
+    z-index: 0;
+    font-size:50rem;
+    transform: rotateZ(-30deg);
+    left: 2%;
+    top: -30%;
+    opacity: 0.5;
+    animation-name: dropping;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes dropping{
+    from{
+        top: -90%;
+    }
+    to {
+        top: 100%;
+    }
+}
+.container #bg-icon2{
+    position: absolute;
+    z-index: 0;
+    font-size:30rem;
+    transform: rotateZ(-30deg);
+    right: 2%;
+    top: -30%;
+    opacity: 0.5;
+    animation: dropping2 3s infinite;
+}
+@keyframes dropping2{
+    from{
+        top: -90%;
+        /* right: 2px; */
+    }
+    to {
+        top: 100%;
+        /* right: 2px; */
+    }
 }
 .container-header{
     padding: 10px 0 30px 50px;
     width: 75%;
+    z-index: 10;
 }
 .container-header h1{
     font-size: 58px;
@@ -32,6 +72,7 @@
     /* background-color: azure; */
     border-radius: 20px;
     display: flex;
+    z-index: 10;
 }
 .container-content{
     background-color: rgb(235, 152, 0);
