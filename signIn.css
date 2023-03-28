@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+.container i{
+    font-size: 90px;
+}
 .container-header{
     padding: 10px 0 30px 50px;
     width: 75%;
