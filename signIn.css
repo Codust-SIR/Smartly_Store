@@ -82,6 +82,9 @@
     color: white;
     text-transform: capitalize;
 }
+.message h1 i{
+    padding: 0 5px;
+}
 .message h2 span{
     font-size: 70px;
     color: white
